@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+a, img, ol, ul, li,
+caption, article, aside, details,
+figure, footer, header, menu, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    background-color: #efefef;
+	line-height: 1;
+}
+ul {
+	list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Begin Application Styling */
+section {
+    padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.c-heading {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.c-message {
+    font-size: 1.5rem;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.c-weather-area {
+    display: flex;
+    justify-content: center;
+}
+
+.c-weather-bug {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.c-weather-bug__content {
+    display: flex;
+    align-items: center;
+}
+
+.c-weather-bug__temp {
+    font-size: 3rem;
+}
+
+.is-top-aligned {
+    vertical-align: top;
 }
